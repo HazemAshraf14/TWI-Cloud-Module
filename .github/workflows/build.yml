@@ -35,11 +35,6 @@ jobs:
     - name: Building application
       run: npm run build
 
-    # - name: Generate deployment package
-    #   run: |
-    #     cd ./output
-    #     zip deploy.zip *
-
     - name: Create SBOM step
       uses: CycloneDX/gh-node-module-generatebom@v1
       with:
