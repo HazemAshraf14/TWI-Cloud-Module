@@ -35,7 +35,7 @@
     "node-forge": "^0.10.0",
     "nodejs-aes256": "1.0.x",
     "openssl-nodejs": "^1.0.5",
-    "request": "2.85.0",
+    "request": "2.88.2",
     "request-promise": "^4.2.5",
     "tmp": "^0.2.1",
     "uuid": "^3.2.1",
