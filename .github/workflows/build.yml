@@ -41,21 +41,21 @@ jobs:
         path: './'
         output: './bom_directory/test.app.bom.xml'
 
-    - name: Install zip
-      uses: montudor/action-zip@v1
+    # - name: Install zip
+    #   uses: montudor/action-zip@v1
 
-    - name: Zip output
-      run: zip -qq -r deploy.zip dist Dockerfile Dockerrun.aws.json custom-nginx-file.conf
-      working-directory: output
+    # - name: Zip output
+    #   run: zip -qq -r deploy.zip dist Dockerfile Dockerrun.aws.json custom-nginx-file.conf
+    #   working-directory: output
 
-    - name: Upload zip file
-      # We upload so we can re-use same jar in next job.
-      uses: actions/upload-artifact@v2
-      with:
-        #Name of artifact can be anything
-        name: artifact
-        #Relative path to jar file
-        path: ./output/deploy.zip
+    # - name: Upload zip file
+    #   # We upload so we can re-use same jar in next job.
+    #   uses: actions/upload-artifact@v2
+    #   with:
+    #     #Name of artifact can be anything
+    #     name: artifact
+    #     #Relative path to jar file
+    #     path: ./output/deploy.zip
       
   # sonarcloud:
   #   needs: build
