@@ -32,7 +32,6 @@
       "tmp": "^0.2.1",
       "uuid": "^3.2.1",
       "winston": "^3.1.0",
-      "x509": "^0.3.4",
       "googleapis": "^100.0.0"
   },
   "devDependencies": {
