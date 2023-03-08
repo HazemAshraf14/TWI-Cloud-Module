@@ -7,6 +7,7 @@
         "test": "jest --watchAll --verbose --runInBand --coverage"
     },
     "dependencies": {
+        "@cyclonedx/bom": "4.0.3",
         "@fidm/x509": "^1.2.1",
         "adm-zip": "^0.4.14",
         "apn": "https://github.com/node-apn/node-apn.git#38a357ed0c153aad09c2857e48a710527e685bfc",
